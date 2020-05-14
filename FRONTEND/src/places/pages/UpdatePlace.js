@@ -109,7 +109,7 @@ const UpdatePlace = () => {
             type="text"
             label="Title"
             validators={[VALIDATOR_REQUIRE()]}
-            errorText="Please enter a valid title."
+            errorText="タイトルを入力してください"
             onInput={inputHandler}
             initialValue={loadedPlace.title}
             initialValid={true}
@@ -119,7 +119,7 @@ const UpdatePlace = () => {
             element="textarea"
             label="Description"
             validators={[VALIDATOR_MINLENGTH(5)]}
-            errorText="Please enter a valid description (min. 5 characters)."
+            errorText="5文字以上入力してください"
             onInput={inputHandler}
             initialValue={loadedPlace.description}
             initialValid={true}

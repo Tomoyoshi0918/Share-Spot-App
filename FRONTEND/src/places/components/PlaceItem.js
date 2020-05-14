@@ -66,18 +66,15 @@ const PlaceItem = (props) => {
         footer={
           <React.Fragment>
             <Button inverse onClick={cancelDeleteHandler}>
-              CANCEL
+              キャンセル
             </Button>
             <Button danger onClick={confirmDeleteHandler}>
-              DELETE
+              削除
             </Button>
           </React.Fragment>
         }
       >
-        <p>
-          Do you want to proceed and delete this place? Please note that it
-          can't be undone thereafter.
-        </p>
+        <p>削除しますか？</p>
       </Modal>
       <li className="place-item">
         <Card className="place-item__content">
@@ -95,15 +92,15 @@ const PlaceItem = (props) => {
           </div>
           <div className="place-item__actions">
             <Button inverse onClick={openMapHandler}>
-              VIEW ON MAP
+              マップ確認
             </Button>
             {auth.userId === props.creatorId && (
-              <Button to={`/places/${props.id}`}>EDIT</Button>
+              <Button to={`/places/${props.id}`}>編集</Button>
             )}
 
             {auth.userId === props.creatorId && (
               <Button danger onClick={showDeleteWarningHandler}>
-                DELETE
+                削除
               </Button>
             )}
           </div>

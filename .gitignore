@@ -1,2 +1,5 @@
-memo/
-REACTJS/node_modules/
+/BACKEND/nodemon.json
+/BACKEND/node_modules/
+/FRONTEND/env
+/FRONTEND/env.production
+/FRONTEND/node_modules/
